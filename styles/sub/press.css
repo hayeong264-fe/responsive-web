@@ -1,0 +1,32 @@
+.container {overflow: hidden;}
+
+
+.post-cont table { table-layout:fixed}
+.post-cont table th {
+    text-align: center;
+}
+
+.post-cont .table-line td {padding: 10px 0;}
+.post-cont .table-list {
+    white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
+    overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
+    text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */ 
+}
+
+.contents button {
+    min-width: 70px;
+    height: 40px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+
+@media screen and (max-width: 767px){
+.post-cont .blind-m {display: none;}
+.post-cont .date {width: 80px;}
+}
+
+

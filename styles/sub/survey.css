@@ -1,0 +1,10 @@
+.contents .survey {padding-top: 30px;}
+.contents button {
+    min-width: 70px;
+    height: 40px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    align-items: center;
+    border-radius: 2px;
+}

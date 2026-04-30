@@ -1,4 +1,12 @@
-.contents .survey {padding-top: 30px;}
+.contents .survey {padding-top: 30px; }
+
+.survey-box {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom : 20px;
+}
+
 .contents button {
     min-width: 70px;
     height: 40px;

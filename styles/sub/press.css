@@ -1,5 +1,5 @@
 .container {overflow: hidden;}
-
+.contents .post-cont {padding: 10px;}
 
 .post-cont table { table-layout:fixed}
 .post-cont table th {
@@ -22,7 +22,8 @@
     align-items: center;
     border-radius: 2px;
 }
-
+.paging-box {text-align: center;}
+.paging-box a {padding: 0 5px;}
 
 @media screen and (max-width: 767px){
 .post-cont .blind-m {display: none;}

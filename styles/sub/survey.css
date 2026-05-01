@@ -1,10 +1,10 @@
 .contents .survey {padding-top: 30px; }
 
 .survey-box {
-    border: 1px solid #ddd;
+    border: 1px solid #e2e2e2;
     border-radius: 10px;
-    padding: 30px;
-    margin-bottom : 20px;
+    padding: 20px 16px 30px 16px;
+    margin : 0 20px 24px 20px;
 }
 
 .contents button {
@@ -16,3 +16,70 @@
     align-items: center;
     border-radius: 2px;
 }
+
+.survey .survey-box .survey-ing,.survey-visitor, .survey-end  {
+    font-size: 14px;
+    border: 1px solid #e2e2e2;
+    padding: 3px 5px;
+    border-radius: 2px;
+    align-items: center;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.survey .survey-box .survey-visitor {
+    color: #232323;
+    margin-right: 3px;
+}
+
+.survey .survey-box .survey-ing, .survey-end {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    color: #fff;
+}
+
+.survey .survey-box .survey-ing {
+    background-color: #1B6EAB;
+}
+
+.survey .survey-box .survey-end {
+    background-color: #949494;
+} 
+.survey .survey-box .survey-title {
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.survey .survey-box .survey-period {
+    font-size: 13px;
+    color: #646464;
+    margin-bottom: 24px;
+}
+.survey .survey-box .composition {
+    overflow: hidden;
+    display: -webkit-box; /* 웹킷 기반 브라우저용 레이아웃 방식 */
+    -webkit-box-orient: vertical; /* 박스 방향을 세로로 설정 */
+    -webkit-line-clamp: 2; /* 웹킷 방식 줄 수 제한 */
+    color: #646464;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+
+.survey .survey-box .survey-participant {
+    color: #464646;
+    font-size: 14px;
+    display: flex;
+}
+
+.survey .survey-box .survey-participant .num {
+    font-size: 19px;
+    color: #1b6eab;
+    margin-left: auto;
+    font-weight: 600;
+    line-height: 22px; /* 줄간격 */
+}
+
+.paging-box { text-align: center;}
+.paging-box a {padding: 0 5px;}

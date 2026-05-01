@@ -1,0 +1,38 @@
+#main .icon-btn {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:4px;
+    border: 1px solid #e2e2e2;
+    font-size: 20px;
+}
+.kdcTit-Wrap {
+    justify-content: flex-start;
+    padding: 12px 12px 12px 5px;
+    border-radius: 10px;
+}
+
+.kdcTit-Wrap .icon-btn li {
+    text-align: center; border: 1px solid #e2e2e2;
+}
+.kdcTit-Wrap .kdc-Box .ch {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.kdcTit-Wrap .kdc-Box dt {
+    padding: 10px 0;
+    text-align: center;
+    border-top: 2px solid #555;
+    border-bottom: 1px solid #e2e2e2;
+    width: 100%;
+    text-align: center; 
+    font-size: 18px; 
+    font-weight: 500;
+}
+.kdcTit-Wrap .kdc-Box dd {
+    font-size: 13px;
+    color: #464646; 
+    margin:0;
+
+}

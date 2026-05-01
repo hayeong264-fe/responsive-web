@@ -61,20 +61,6 @@ input {
     color: #333;
 }
 
-button {
-    padding: 10px 20px;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #007bff;
-    color: #fff;
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
 /* 3. 레이아웃 클래스 (공통 사용) */
 .wrapper { width: 100%; min-width: 320px; }
 .container { width: 100%; }
@@ -143,6 +129,10 @@ button:hover {
     border-bottom: 1px solid #ababab;
 }
 
+.post-cont tr:first-child td {
+    border-top: 1px solid #ababab;
+}
+
 .img-cont li { /* 이미지만 있는 페이지 (큐레이션) */
     border-bottom: 1px solid #e2e2e2;
 }
@@ -174,6 +164,37 @@ button:hover {
 }
 .paging-btn {
     background-color: #eee;
+}
+
+.lb-cate {
+    padding: 4px 20px;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 500;
+}
+.sj { /* 수지 */
+    background-color: #1b6eab;
+}
+.jj { /* 죽전 */
+    background-color: #a88200;
+}
+.bj { /* 보정 */
+    background-color: #8a9a5b;
+}
+.dc { /* 동천 */
+    background-color: #14c0ba;
+}
+.sb { /* 성복 */
+    background-color: #119814;
+}
+.gh { /* 기흥 */
+    background-color: #595bd1;
+}
+.cd { /* 창덕 */
+    background-color: #3784f0;
+}
+.gt { /* 공통 */
+    background-color: #303030;
 }
 
 .wrapper { 

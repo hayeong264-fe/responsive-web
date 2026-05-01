@@ -1,26 +1,38 @@
 #main .icon-btn {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap:4px;
+    gap: 8px;
     border: 1px solid #e2e2e2;
-    font-size: 20px;
+    font-size: 16px;
+    padding: 15px 10px;
+    margin-bottom: 30px;
 }
-.kdcTit-Wrap {
-    justify-content: flex-start;
+.kdctit-wrap {
     padding: 12px 12px 12px 5px;
     border-radius: 10px;
 }
 
-.kdcTit-Wrap .icon-btn li {
-    text-align: center; border: 1px solid #e2e2e2;
+.kdctit-wrap .icon-btn li {
+    text-align: center; 
+    border: 1px solid #e2e2e2;
+    padding: 30px 0;
+    border-radius: 3px;
 }
-.kdcTit-Wrap .kdc-Box .ch {
+.kdctit-wrap .icon-btn li button {
+    font-weight: 500;
+}
+.kdctit-wrap .kdc-box { padding: 5px;}
+.kdctit-wrap .kdc-box .ch {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
 
-.kdcTit-Wrap .kdc-Box dt {
+/* .kdctit-wrap .kdc-box dl {
+    padding: 50px;
+} */
+
+.kdctit-wrap .kdc-box dt {
     padding: 10px 0;
     text-align: center;
     border-top: 2px solid #555;
@@ -30,9 +42,15 @@
     font-size: 18px; 
     font-weight: 500;
 }
-.kdcTit-Wrap .kdc-Box dd {
+.kdctit-wrap .kdc-box dd {
     font-size: 13px;
     color: #464646; 
     margin:0;
-
+    width: 145px;
+    white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
+    overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
+    text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */ 
 }
+
+
+

@@ -12,38 +12,50 @@
 </head>
 <body>
 
-    <div class="container">
-        <aside id="aside">
+    <div class="container inner">
+        <aside id="aside" class="blind-m">
             <h1>열린마당</h1>
-            <div>
-                <ul>
-                    <li>도서관소식</li>
-                    <li>보도자료</li>
-                    <li>도서관연중행사</li>
-                    <li>도서관 카드뉴스</li>
-                    <li>자주하는질문</li>
-                    <li>묻고답하기</li>
-                    <li>설문조사</li>
-                    <li>
-                        <dl>
-                            <dt>원클릭대관신청</dt>
-                            <dd>수지도서관대관신청</dd>
-                            <dd>원클릭대관신청</dd>
-                            <dd>원클릭대관신청안내</dd>
-                        </dl>
-                    </li>
-                    <li>견학신청</li>
-                    <li>
-                        <dl>
-                            <dt>시민참여</dt>
-                            <dd>자원활동가</dd>
-                            <dd>자원봉사신청안내</dd>
-                            <dd>강사지원신청</dd>
-                            <dd>도서관공모</dd>
-                        </dl>
-                    </li>
-                    <li>도서기증</li>
-                </ul>
+            <div class="side-tab">
+                <dl>
+                    <dt>도서관소식</dt>
+                </dl>
+                <dl>
+                    <dt>보도자료</dt>
+                </dl>
+                <dl>
+                    <dt>도서관연중행사</dt>
+                </dl>
+                <dl>
+                    <dt>도서관 카드뉴스</dt>
+                </dl>
+                <dl>
+                    <dt>자주하는질문</dt>
+                </dl>
+                <dl>
+                    <dt>묻고답하기</dt>
+                </dl>
+                <dl class="active">
+                    <dt>설문조사</dt>
+                </dl>
+                <dl>
+                    <dt>원클릭대관신청</dt>
+                    <dd>수지도서관대관신청</dd>
+                    <dd>원클릭대관신청</dd>
+                    <dd>원클릭대관신청안내</dd>
+                </dl>
+                <dl>
+                    <dt>견학신청</dt>
+                </dl>
+                <dl>
+                    <dt>시민참여</dt>
+                    <dd>자원활동가</dd>
+                    <dd>자원봉사신청안내</dd>
+                    <dd>강사지원신청</dd>
+                    <dd>도서관공모</dd>
+                </dl>
+                <dl>
+                    <dt>도서기증</dt>
+                </dl>
             </div>
         </aside><!-- // #aside End -->
         <section id="main">
@@ -52,21 +64,22 @@
                     <span>열린마당</span>
                     <span>설문조사</span>
                 </p>
-                <h1>설문조사</h1>
+                <h1 class="tit-main">설문조사</h1>
             </div>
             <div class="contents">
-                <form action="" methood="post">
-                    <fieldset>
-                        <legend class="blind"></legend>
-                        <ul title="검색방법 선택">
-                            <li>제목</li>
-                            <li>내용</li>
-                        </ul>
-                    </fieldset>
-                </form>
-            
-                <input type="text" name="" id="" placeholder="검색어를 입력해 주세요"/>
-                <button>검색</button>
+                <div class="search-box">
+                    <form action="" methood="post">
+                        <fieldset>
+                            <legend class="blind"></legend>
+                            <ul title="검색방법 선택">
+                                <li class="show tit">제목</li>
+                                <li>내용</li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                    <input class="input" type="text" name="" id="" placeholder="검색어를 입력해 주세요"/>
+                    <button>검색</button>
+                </div>
                 <div class="survey">
                     <div class="survey-box">
                         <span class="survey-visitor">방문자 전체</span>

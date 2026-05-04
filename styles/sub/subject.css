@@ -6,6 +6,7 @@
     font-size: 16px;
     padding: 15px 10px;
     margin-bottom: 30px;
+    border-radius: 10px;
 }
 .kdctit-wrap {
     padding: 12px 12px 12px 5px;
@@ -21,36 +22,91 @@
 .kdctit-wrap .icon-btn li button {
     font-weight: 500;
 }
-.kdctit-wrap .kdc-box { padding: 5px;}
+
 .kdctit-wrap .kdc-box .ch {
+    display: none;
+}
+.kdctit-wrap .kdc-box .ch /*show*/ {
+    display: block;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    
 }
 
-/* .kdctit-wrap .kdc-box dl {
-    padding: 50px;
-} */
-
+.kdctit-wrap .kdc-box dl {
+    width: 100%;
+    white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
+    overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
+    text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */ 
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e4e4e4;
+    margin-top: 8px;
+}
 .kdctit-wrap .kdc-box dt {
     padding: 10px 0;
-    text-align: center;
     border-top: 2px solid #555;
     border-bottom: 1px solid #e2e2e2;
-    width: 100%;
     text-align: center; 
-    font-size: 18px; 
+    font-size: 17px; 
     font-weight: 500;
 }
 .kdctit-wrap .kdc-box dd {
     font-size: 13px;
     color: #464646; 
     margin:0;
-    width: 145px;
-    white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
-    overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
-    text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */ 
+    
 }
 
+.kdctit-wrap .kdc-box dl dt {
+    margin-bottom: 10px;
+}
 
+@media screen and (max-width: 767px){ 
+    body { 
+    }
+    .kdctit-wrap .kdc-box dd {
+        width: 145px;
+        white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
+        overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
+        text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
+    }
 
+    .kdctit-wrap .kdc-box dt {
+        white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
+        overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
+        text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */ 
+    }
+}
+
+@media screen and (min-width: 768px){ 
+    body { 
+        font-size: 18px;
+    }
+   .kdctit-wrap .kdc-box .ch { 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    #main .icon-btn {
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap: 8px;
+    }
+}
+@media screen and (min-width: 1024px){ 
+    body { 
+        
+    }
+    .kdctit-wrap .kdc-box dd {
+        width: 145px;
+        white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
+        overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
+        text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
+    }
+    .kdctit-wrap .kdc-box .ch { 
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;}
+}

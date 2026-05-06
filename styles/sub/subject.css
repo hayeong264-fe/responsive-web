@@ -94,12 +94,16 @@
         grid-template-columns: repeat(5,1fr);
         gap: 8px;
     }
+    .kdctit-wrap .kdc-box dd {
+        font-size: 15px;
+    }
+    .kdctit-wrap .kdc-box dt {font-size: 21px;}
 }
 @media screen and (min-width: 1024px){ 
     body { 
         
     }
-    .kdctit-wrap .kdc-box dd {
+    .kdctit-wrap .kdc-box dt, dd {
         width: 145px;
         white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
         overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */

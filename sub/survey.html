@@ -67,19 +67,23 @@
                 <h1 class="tit-main">설문조사</h1>
             </div>
             <div class="contents">
-                <div class="search-box">
-                    <form action="" methood="post">
+                <div class="base-form">
+                    <form>
                         <fieldset>
-                            <legend class="blind"></legend>
-                            <ul title="검색방법 선택">
-                                <li class="show tit">제목</li>
+                        <legend class="blind">보도자료 검색</legend>
+                            
+                        <div class="search">
+                            <ul class="library-name">
+                                <li class="show">제목</li>
                                 <li>내용</li>
                             </ul>
+                            <label for="userName" class="blind">조회할 신청자명 기입</label>
+                            <input type="text" name="userName" id="userName">
+                            <button>검색</button>
+                        </div><!-- search -->
                         </fieldset>
                     </form>
-                    <input class="input" type="text" name="" id="" placeholder="검색어를 입력해 주세요"/>
-                    <button>검색</button>
-                </div>
+                </div><!-- base-form -->
                 <div class="survey">
                     <div class="survey-box">
                         <span class="survey-visitor">방문자 전체</span>

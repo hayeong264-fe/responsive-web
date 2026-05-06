@@ -1,5 +1,53 @@
 .contents .survey {padding-top: 30px; }
 
+.contents .base-form {
+    border: 0 none;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #e2e2e2;
+}
+
+.contents .base-form .search {
+    display: flex;
+    gap: 4px;
+    margin-top: 5px;
+}
+
+.search .library-name {width: 30%;}
+.contents .base-form li:first-child {
+}
+
+.contents .base-form ul {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.contents .base-form li.show {
+    display: block;
+}
+
+
+.contents .base-form li {
+    display: none;
+    padding: 10px 20px 10px 15px;
+    border-top: 1px solid #e2e2e2;
+}
+
+.contents .base-form input {
+    background-color: #fff;
+}
+
+.contents .base-form button {
+    width: 30%;
+    border: 1px solid #444;
+    background-color: #444;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+
 .survey-box {
     border: 1px solid #e2e2e2;
     border-radius: 10px;
@@ -7,49 +55,6 @@
     margin : 0 20px 24px 20px;
 }
 
-.contents button {
-    min-width: 70px;
-    height: 40px;
-    background-color: #000;
-    color: white;
-    text-align: center;
-    align-items: center;
-    border-radius: 2px;
-}
-.search-box {
-    margin-bottom: 30px; 
-    margin-top: 10px;
-    display: flex;
-    gap: 4px;
-    align-items: center;
-}
-
-.search-box .tit {
-    border-radius: 2px;
-    border: 1px solid #e2e2e2;
-    padding: 4px 24px;
-    text-align: left; 
-    margin-right: 2px;
-}
-.search-box .input {
-    width: 53%;
-    padding: 6px 5px;
-    border-radius: 2px;
-    margin-right: 2px;
-}
-.search-box button {
-    min-width: 70px;
-    height: 36px;
-    background-color: #000;
-    color: white;
-    text-align: center;
-    align-items: center;
-    border-radius: 2px;
-    font-size: 16px;
-}
-
-.search-box li {display: none;}
-.search-box li.show {display: block;}
 
 .survey .survey-box .survey-ing,.survey-visitor, .survey-end  {
     font-size: 14px;
@@ -84,7 +89,13 @@
     font-weight: 600;
     color: #000;
     margin-bottom: 8px;
+    overflow: hidden;
+    display: -webkit-box; /* 웹킷 기반 브라우저용 레이아웃 방식 */
+    -webkit-box-orient: vertical; /* 박스 방향을 세로로 설정 */
+    -webkit-line-clamp: 2; /* 웹킷 방식 줄 수 제한 */
+    height: 60px;
 }
+
 
 .survey .survey-box .survey-period {
     font-size: 13px;
@@ -98,13 +109,14 @@
     -webkit-line-clamp: 2; /* 웹킷 방식 줄 수 제한 */
     color: #646464;
     font-size: 13px;
-    margin-bottom: 24px;
+    margin-bottom: 13px;
 }
 
 .survey .survey-box .survey-participant {
     color: #464646;
     font-size: 14px;
     display: flex;
+    padding-top: 20px;
 }
 
 .survey .survey-box .survey-participant .num {
@@ -119,23 +131,62 @@
 .paging-box a {padding: 0 5px;}
 
 
+
+
+@media screen and (min-width: 500px){
+    .survey {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    .survey-box {
+        margin: 0;
+    }
+    
+}
 @media screen and (max-width: 767px){ 
     body { 
     }
-    .survey-box {
-        
-    }
+    
 }
 
 @media screen and (min-width: 768px){ 
     body { 
         font-size: 18px;
-  
     }
+    
+    .survey .survey-box .composition {
+        font-size: 16px;
+    }
+
+    .survey .survey-box .survey-period {
+        font-size: 16px;
+    }
+    .survey {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+    .survey-box {
+        margin: 0;
+    }
+
+    .survey .survey-box .survey-participant {
+        font-size: 17px;
+    }
+
+    .survey .survey-box .survey-participant .num {
+        font-size: 22px;
+        line-height: 24px; /* 줄간격 */
+    }
+    
 }
+
 @media screen and (min-width: 1024px){ 
     body { 
-        
+        font-size: 16px;
     }
+    .survey .survey-box .survey-title {font-size: 19px;}
+
     
 }

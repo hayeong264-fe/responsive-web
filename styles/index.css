@@ -1,5 +1,45 @@
+body {font-size: 16px; }
 #main .tit-main {
     font-size: 28px;
     font-weight: 600;
     padding-top: 30px;
+}
+
+#main ul {display: flex; padding: 30px 0 30px;}
+
+#main ul li a {
+    display: inline-block;
+    height: 32px;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 16px;
+    margin-right: 10px;
+}
+
+#main ul .culture {background-color: #c83156;}
+#main ul .vacation {background-color: #464646;}
+.culture-box {position: relative;}
+.culture-box .plus-btn {position: absolute; top: 0; right:0;}
+
+
+.event .event-box span {
+    display: inline-block;
+    align-items: center;
+    color: #fff;
+    border: 1px solid #e2e2e2;
+    padding: 7px 5px;
+    height: 40px;
+    min-width: 80px;
+    margin-bottom: 30px;
+}
+
+.event .event-box .event-sj {background-color: #1b6eab;}
+.event .event-box .event-ing  {background-color: #e13e3f;}
+
+/* .event {display: flex;} */
+
+.event .event-box {
+    width: 312px;
+    border: 1px solid #e2e2e2;
+    padding: 20px;
 }

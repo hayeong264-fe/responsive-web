@@ -12,7 +12,7 @@
     padding: 10px;
     background-color: #e2e2e2;
 }
-
+.search .library-name {width: 30%;}
 .contents .base-form .search {
     display: flex;
     gap: 4px;
@@ -45,7 +45,7 @@
 }
 
 .contents .base-form button {
-    width: 50%;
+    width: 30%;
     border: 1px solid #444;
     background-color: #444;
     color: #fff;

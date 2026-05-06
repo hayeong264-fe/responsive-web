@@ -55,6 +55,7 @@
     font-size: 13px;
     color: #464646; 
     margin:0;
+    padding: 0 8px;
     
 }
 
@@ -104,7 +105,6 @@
         
     }
     .kdctit-wrap .kdc-box dt, dd {
-        width: 145px;
         white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
         overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
         text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
@@ -112,7 +112,9 @@
     .kdctit-wrap .kdc-box .ch { 
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 10px;}
-    .kdctit-wrap .kdc-box dl {width: 78%;}
+        gap: 15px;
+    }
+    
+
 }
 

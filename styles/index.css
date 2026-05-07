@@ -1,3 +1,4 @@
+.section-grop {padding: 30px 0;}
 .main-area {margin-bottom: 20px;}
 .plus-btn {
     background-color: rgba(255, 255, 255, .8);
@@ -11,7 +12,7 @@
     align-items: center;
     z-index: 2;
 }
-
+.big-box {border-radius: 10px; overflow: hidden; box-shadow: 5px 5px 10px rgba(0, 0, 0, .1);}
 .main-txt {
     font-size: 14px;
     color:#464646;
@@ -19,14 +20,15 @@
 
 .btn-box {
     display: flex;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px; 
 }
-.last {margin-left: 5px;}
+
+.btn-box p { width: 50%;}
+.last {margin-left: 12px;}
 
 .btn-box a {
     display: inline-block;
-    width: 150px;
+    width: 100%;
     font-size: 16px;
     height: 50px; 
     padding: 15px 0;
@@ -41,19 +43,26 @@
     font-size: 18px;
     color: #fff;
     height: 50px;
-    padding: 10px;
+    padding: 10px 20px;
     background-color: #c83156;
 }
 
 .desc {padding: 20px 30px;}
 
+.seatbl tbody tr:first-child th, .seatbl tbody tr:first-child td {
+    padding-top: 15px;
+}
 .seatbl thead tr th {
     border-bottom: 1px solid #ddd;
     padding: 10px 0;
 }
 .ta-l,.ta-l01,.ta-l02,.ta-l03,.ta-l04 {font-weight: 500;}
+.ta-l20 {padding-right: 5px;}
+.seatbl .ta-l21,.ta-l22 {color:#646464; }
+.seatbl .ta-l23 {color: #e82929;}
+.seatbl .ta-l24 {color: #1b30ff;}
 
-.seatbl tbody 
+
 
 
 /* 문화행사 */
@@ -98,7 +107,7 @@
 .event .event-box .event-ing.end01 { background-color: #8e9297;}
 .event .event-box .event-ing.end {font-size: 13px; background-color: #5ba701; line-height: 1;}
 
-.event {display: flex; }
+.event {display: flex; overflow: hidden; }
 
 .event .event-box {
     width: 235px;
@@ -144,6 +153,9 @@
     .event .event-box {width: 314px;}
     .event-box .event-title {font-size: 20px;}
     .item-info {font-size: 17px;}
+    .seatbl tbody tr td {font-size: 18px; text-align: center;}
+    .seatbl th {text-align: center;}
+    .seatbl .ta-l, tbody .ta-l20 {text-align: left;}
 }
 
 @media screen and (min-width: 1024px){ 
@@ -151,6 +163,5 @@
 
     }
     .event .event-box {width: 332px;}
-
-    
+    .ta-l20 {padding-right: 5px;}
 }

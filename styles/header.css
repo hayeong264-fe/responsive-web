@@ -1,0 +1,25 @@
+#gnb.m-base {
+    position:fixed; left:0; top:0; 
+    width: 100%; 
+    background-color: #fff;
+}
+#gnb.m-base .wrap {
+    position:relative;
+}
+#gnb.m-base .gnb-tab { 
+    display: flex;
+    width: 40%;
+}
+
+#gnb.m-base .gnb-tab .sub-menu {display: none;}
+
+#gnb.m-base .gnb-tab.show .sub-menu {
+    display: block; 
+    position:absolute; left:40%; top:0;
+    width: calc(100% - 40%);
+}
+#gnb.m-base .sub-menu .depth3 { display: none;}
+#gnb.m-base .sub-menu .depth3.on { display: block;}
+
+
+/* #gnb.m-base .gnb-tab a { width: 30%; } */

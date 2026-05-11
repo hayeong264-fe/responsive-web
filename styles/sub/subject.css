@@ -20,13 +20,15 @@
     border-radius: 3px;
 }
 .kdctit-wrap .icon-btn li button {
+    color: #464646;
+    font-size: 16px;
     font-weight: 500;
 }
 
 .kdctit-wrap .kdc-box .ch {
     display: none;
 }
-.kdctit-wrap .kdc-box .ch /*show*/ {
+.kdctit-wrap .kdc-box .ch.show {
     display: block;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -52,7 +54,7 @@
     font-weight: 500;
 }
 .kdctit-wrap .kdc-box dd {
-    font-size: 13px;
+    font-size: 14px;
     color: #464646; 
     margin:0;
     padding: 0 8px;

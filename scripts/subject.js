@@ -1,4 +1,3 @@
-console.log("연결됨");
 const tabBtn = document.querySelectorAll(".icon-btn li");
 const content = document.querySelectorAll(".kdc-box .ch");
 

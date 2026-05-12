@@ -5,25 +5,23 @@
 .post-cont table th {
     text-align: center;
 }
+.library-box ul {
+    width: 95%;
+    position:absolute; left:10px; top:7px;
+}
+.contents .base-form #librarych.open {
+    height: 300px;
+    overflow-y: auto;
+    z-index: 100;
+}
 
 .contents .base-form {
+    position:relative;
     height: 120px;
     border: 0 none;
     margin-bottom: 20px;
     padding: 10px;
     background-color: #e2e2e2;
-}
-.search {position: relative; line-height: 24px; /* 줄간격 */}
-.search .library-name {width: 26%; position: absolute; top:0; left:0; }
-.search .library-name li.show {display: block;}
-.search .library-name li {display: none;}
-
-.input-box {width: 73%; position: absolute; left: 27%; top:0; display: flex;}
-
-.contents .base-form .search {
-    display: flex;
-    gap: 4px;
-    margin-top: 5px;
 }
 
 .contents .base-form ul {
@@ -45,6 +43,21 @@
     padding: 10px 20px 10px 15px;
 }
 
+.search .library-name {width: 20%; position: absolute; top:0; left:0; }
+.search .library-name li.show {display: block;}
+.search .library-name li {display: none;}
+
+.input-box {width: 84%; position: absolute; left: 21%; top:0; display: flex;}
+
+.contents .base-form .search {
+    width: 90%;
+    display: flex;
+    gap: 4px;
+    margin-top: 5px;
+    line-height: 24px;
+    position:absolute; left:10px; top:58px;
+}
+
 .contents .base-form input {
     background-color: #fff;
 }
@@ -60,7 +73,7 @@
 }
 
 
-.post-cont .table-line td {padding: 10px 2px;}
+.post-cont .table-line td {padding: 10px 2px; text-align: center;}
 .post-cont .table-list {
     white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
     overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */

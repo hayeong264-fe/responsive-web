@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard.css">
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/sub/survey.css">
-    <!-- <script src="scripts/sub/서브페이지명.js" defer></script> -->
+    <script src="../scripts/survey.js" defer></script>
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css" rel="stylesheet">
 </head>
 <body>
@@ -77,9 +77,11 @@
                                 <li class="show">제목</li>
                                 <li>내용</li>
                             </ul>
-                            <label for="userName" class="blind">조회할 신청자명 기입</label>
-                            <input type="text" name="userName" id="userName">
-                            <button>검색</button>
+                            <div class="input-box">
+                                <label for="userName" class="blind">조회할 신청자명 기입</label>
+                                <input type="text" name="userName" id="userName">
+                                <button>검색</button>
+                            </div>
                         </div><!-- search -->
                         </fieldset>
                     </form>

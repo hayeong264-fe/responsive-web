@@ -7,12 +7,19 @@
 }
 
 .contents .base-form {
+    height: 120px;
     border: 0 none;
     margin-bottom: 20px;
     padding: 10px;
     background-color: #e2e2e2;
 }
-.search .library-name {width: 30%;}
+.search {position: relative; line-height: 24px; /* 줄간격 */}
+.search .library-name {width: 26%; position: absolute; top:0; left:0; }
+.search .library-name li.show {display: block;}
+.search .library-name li {display: none;}
+
+.input-box {width: 73%; position: absolute; left: 27%; top:0; display: flex;}
+
 .contents .base-form .search {
     display: flex;
     gap: 4px;
@@ -33,11 +40,9 @@
     display: block;
 }
 
-
 .contents .base-form li {
     display: none;
     padding: 10px 20px 10px 15px;
-    border-top: 1px solid #e2e2e2;
 }
 
 .contents .base-form input {
@@ -51,6 +56,7 @@
     color: #fff;
     font-weight: 500;
     border-radius: 3px;
+    margin-left: 5px;
 }
 
 
@@ -89,9 +95,6 @@
 
 
 @media screen and (min-width: 1024px){ 
-    body { 
-        
-    }
     
 }
 @media screen and (max-width: 1023px){

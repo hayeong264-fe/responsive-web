@@ -29,7 +29,6 @@
     display: none;
 }
 .kdctit-wrap .kdc-box .ch.show {
-    display: block;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -66,8 +65,6 @@
 }
 
 @media screen and (max-width: 767px){ 
-    body { 
-    }
     .kdctit-wrap .kdc-box dd {
         width: 145px;
         white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
@@ -87,11 +84,10 @@
         font-size: 18px;
     }
    .kdctit-wrap .kdc-box .ch { 
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+       
         margin-bottom: 10px;
     }
+    .kdctit-wrap .kdc-box .ch.show { grid-template-columns: repeat(3, 1fr);}
     #main .icon-btn {
         display: grid;
         grid-template-columns: repeat(5,1fr);
@@ -112,11 +108,11 @@
         text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */
     }
     .kdctit-wrap .kdc-box .ch { 
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 15px;
+        
     }
     
-
+    .kdctit-wrap .kdc-box .ch.show {display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;}
 }
 

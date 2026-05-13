@@ -9,17 +9,28 @@
     width: 95%;
     position:absolute; left:10px; top:7px;
 }
+
+ .base-form #library-ch {
+    width: calc(100% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: hidden;
+    position: absolute; left: 10px; top: 10px;
+    z-index: 1;
+}
+
 .contents .base-form #librarych.open {
-    height: 300px;
+    height: 300px; /* 스크롤때문에 써야됨 */
     overflow-y: auto;
     z-index: 100;
 }
 
 .contents .base-form {
     position:relative;
-    height: 120px;
     border: 0 none;
     margin-bottom: 20px;
+    height: 120px;
     padding: 10px;
     background-color: #e2e2e2;
 }
@@ -38,24 +49,47 @@
     display: block;
 }
 
-.contents .base-form li {
+ .contents .base-form li {
     display: none;
+    height: 46px;
     padding: 10px 20px 10px 15px;
+    border-top: 1px solid #e2e2e2;
+}
+ .contents .base-form li:first-child {
+    border-top: 0 none;
 }
 
-.search .library-name {width: 20%; position: absolute; top:0; left:0; }
+.base-form .search div {
+    width: calc(80% - 4px);
+    position: absolute; left: calc(20% + 4px); top: 0;
+    display: flex;
+    gap: 4px;
+}
+
+.base-form .search ul {
+    width: 20%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    position: absolute; left: 0; top: 0;
+}
+
 .search .library-name li.show {display: block;}
 .search .library-name li {display: none;}
 
-.input-box {width: 84%; position: absolute; left: 21%; top:0; display: flex;}
+.input-box {
+    width: 81%;
+    position: absolute; left: 25%; top:1px; 
+    display: flex;
+    margin-left:1px;
+}
 
 .contents .base-form .search {
-    width: 90%;
+    width: calc(100% - 20px);
     display: flex;
     gap: 4px;
     margin-top: 5px;
-    line-height: 24px;
-    position:absolute; left:10px; top:58px;
+    position: relative; right: 10px; bottom: 10px;
 }
 
 .contents .base-form input {
@@ -69,7 +103,7 @@
     color: #fff;
     font-weight: 500;
     border-radius: 3px;
-    margin-left: 5px;
+    margin-left: 4px;
 }
 
 
@@ -108,8 +142,38 @@
 
 
 @media screen and (min-width: 1024px){ 
-    
+    .contents .base-form {
+        height: 68px;
+    }
+    .contents .base-form fieldset {
+        display: flex;
+    }
+
+    .contents .base-form .search #librarych {
+        width: calc(30% - 14px);
+    }
+
+    .contents .base-form .search {
+        margin-top: 0;
+        width: calc(70% - 10px);
+        position: absolute; top: 10px; bottom: auto;
+    }
+    .base-form .search .library-name {
+        width: 50%;
+    }
+
+    .base-form .search button {
+        padding: 10px 0;
+        font-size: 18px;
+        box-sizing: border-box;
+    }
+
+    .library-box ul {
+        width: 60%;
+        position:absolute; left:10px; top:7px;
+    }
 }
+
 @media screen and (max-width: 1023px){
     .blind-t {  display: none;}
     .table-line {text-align: center;}
@@ -124,5 +188,6 @@
         white-space: nowrap; /* 줄바꿈 넘어가지 않게 /한 줄로 */
         overflow-x: hidden;  /* 넘친 부분 화면에 표시 x */
         text-overflow: ellipsis; /* 넘친 부분 ...으로 표현 */ }
+    
 }
 

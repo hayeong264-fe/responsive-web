@@ -60,7 +60,7 @@
     overflow-x: auto;
 }
 
-.banner-list {
+.swiper-wrapper {
     display: flex;
     padding-top: 16px;
 }
@@ -369,13 +369,13 @@
     display: block;
 }
 
-.banner-list li {
+.swiper-wrapper li {
     flex-shrink: 0;
     width: 250px;
     margin-right: 10px;
     border: 1px solid #ddd; /*임시*/
 }
-.banner-list li div {
+.swiper-wrapper li div {
     width: 100%;
     height: 150px;
     background-color: #eee; /*임시*/
@@ -395,17 +395,21 @@
     margin-top: 10px;
     color: #646464;
 }
-/*문화 행사*/
 
-.event-box { /*li*/
+/*문화 행사 (하영구역)*/
+
+.swiper-wrapper .swiper-slide { /*li*/
     width: 235px;
+    height: auto;
     border: 1px solid #e2e2e2;
     padding: 20px;
     flex-shrink: 0;
     margin-right: 20px;
     box-shadow: 7px 7px 15px rgba(0, 0, 0, .2);
 }
-.event-box span {
+
+.swiper-wrapper .swiper-slide:first-child {margin-left: 20px;}
+.swiper-slide span {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -416,11 +420,15 @@
     padding: 0 5px;
     margin-right: 5px;
 }
-.event-box .sj {background-color: #1b6eab;}
-.event-box .ing  {background-color: #b94c4d;}
-.event-box .before {background-color: #5784ec;}
-.event-box .closed { background-color: #8e9297;}
-.event-box .pending  {font-size: 13px; background-color: #81b148;}
+.swiper-slide {
+    width: 280px !important;
+    padding: 20px;
+}
+.swiper-slide .sj {background-color: #1b6eab;}
+.swiper-slide .ing  {background-color: #b94c4d;}
+.swiper-slide .before {background-color: #5784ec;}
+.swiper-slide .closed { background-color: #8e9297;}
+.swiper-slide .pending  {font-size: 13px; background-color: #81b148;}
 
 
 .event-title {
@@ -434,15 +442,15 @@
     -webkit-line-clamp: 2; /* 웹킷 방식 줄 수 제한 */
 }
 
-.event-box .item-info {
+.swiper-slide .item-info {
     color: #646464;
 }
 
-.event-box .event-period {
+.swiper-slide .event-period {
     line-height: 1.1;
 }
 
-.event-box .target {margin-top: 8px;}
+.swiper-slide .target {margin-top: 8px;}
 
 .item-info .stand-by{margin-left: 10px;}
 

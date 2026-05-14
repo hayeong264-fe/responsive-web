@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard.css">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/index.css">
-    <script src="scripts/common.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="scripts/index.js" defer></script>
 </head>
 <body>
 <div class="container inner">
@@ -45,9 +47,9 @@
                                     <span class="year">2026</span>
                                 </p>
                                 <p class="btns">
-                                    <button class="prev"><img src="../images/icon/prev-w.png" alt="이전목록"></button>
+                                    <button class="prev"><img src="images/icon/prev-w.png" alt="이전목록"></button>
                                     <span>05</span>
-                                    <button class="nest"><img src="../images/icon/next-w.png" alt="다음목록"></button>
+                                    <button class="nest"><img src="images/icon/next-w.png" alt="다음목록"></button>
                                 </p>
                                 <div class="rest-day">
                                     <span>01</span>
@@ -162,7 +164,7 @@
                 <div class="sec-area notice">
                     <div class="tit-box">
                         <h2 class="sec-tit">도서관 소식</h2>
-                        <a href="#" class="more"><img src="../images/icon/plus.png" alt="전체보기"></a>
+                        <a href="#" class="more"><img src="images/icon/plus.png" alt="전체보기"></a>
                     </div>
                     <p class="main-txt">도서관의 주요소식을 알려드립니다.</p>
                 
@@ -247,7 +249,7 @@
                 <div class="sec-area guide">
                     <div class="tit-box">
                         <h2 class="sec-tit">도서관 이용안내</h2>
-                        <a href="#" class="more"><img src="../images/icon/plus.png" alt="전체보기"></a>
+                        <a href="#" class="more"><img src="images/icon/plus.png" alt="전체보기"></a>
                     </div>
                     <p class="main-txt">도서관 이용안내 입니다.</p>
                     <div class="btn-box">
@@ -285,7 +287,7 @@
                     <div class="tit-wrap">
                         <div class="tit-box">
                             <h2 class="sec-tit">도서관 아카이브</h2>
-                            <a href="#" class="more"><img src="../images/icon/plus.png" alt="전체보기"></a>
+                            <a href="#" class="more"><img src="images/icon/plus.png" alt="전체보기"></a>
                         </div>
                         <p class="main-txt">다양한 자료와 사진으로 소개하는 도서관 기록을 둘러보세요.</p>
                             <ul class="sel-box">
@@ -336,15 +338,15 @@
                 <div class="sec-area culture-banner">
                     <div class="tit-box">
                         <h2 class="sec-tit">문화행사</h2>
-                        <a href="#" class="more"><img src="../images/icon/plus.png" alt="전체보기"></a>
+                        <a href="#" class="more"><img src="images/icon/plus.png" alt="전체보기"></a>
                     </div>
                     <div class="tab-btn">
                         <button class="active">문화행사</button>
                         <button>방학특강</button>  
                     </div>    
-                    <div class="list-wrap">
-                        <div class="banner-list"><!--ul-->
-                            <div class="event-box">
+                    <div class="list-wrap event-swiper swiper">
+                        <div class="swiper-wrapper"><!--ul-->
+                            <div class="swiper-slide">
                                 <span class="sj">수지</span>
                                 <span class="ing">접수중</span>
                                 <p class="event-title">수지도서관X경희대 메이커 AI·SW교육 「핑퐁 로봇」
@@ -356,7 +358,7 @@
                                     <p class="survey-participant"><span>신청 : 10/15</span><span class="stand-by">대기 : 0/10</span></p>
                                 </div><!--item-info-->
                             </div>
-                            <div class="event-box">
+                            <div class="swiper-slide">
                                 <span class="sj">수지</span>
                                 <span class="ing">접수중</span>
                                 <p class="event-title">수지도서관X경희대 메이커 AI ·SW교육 「로봇대회 체험반」
@@ -368,7 +370,7 @@
                                     <p class="survey-participant"><span>신청 : 13/18</span><span class="stand-by">대기 : 0/10</span></p>
                                 </div><!--item-info-->
                             </div>
-                            <div class="event-box">
+                            <div class="swiper-slide">
                                 <span class="sj">수지</span>
                                 <span class="pending">대기중</span>
                                 <p class="event-title">[메이커] 카네이션으로 전하는 감사의 한마디 「카네이션 감사카드(5월)」
@@ -380,7 +382,7 @@
                                     <p class="survey-participant"><span>신청 : 12/12</span><span class="stand-by">대기 : 0/5</span></p>
                                 </div>
                             </div>
-                            <div class="event-box">
+                            <div class="swiper-slide">
                                 <span class="sj">수지</span>
                                 <span class="pending">대기중</span>
                                 <p class="event-title">[5월 독서문화행사] (가족)업사이클링 팝업북 만들기(2차: 5.21.목)
@@ -392,8 +394,8 @@
                                     <p class="survey-participant"><span>신청 : 12/12</span><span class="stand-by">대기 : 0/5</span></p>
                                 </div>
                             </div>
-                            <div class="event-box">
-                                <span class="event-sj">수지</span>
+                            <div class="swiper-slide">
+                                <span class="sj">수지</span>
                                 <span class="event-ing before">신청전</span>
                                 <p class="event-title">[메이커] 3D펜 리틀메이커스(2부) - 5월 30일(토) ※해당 일에는 내부교육으로 1부는 진행하지 않습니다.
                                     <a href="#"></a>
@@ -404,8 +406,8 @@
                                     <p class="survey-participant"><span>신청 : 0/10</span><span class="stand-by">대기 : 0/0</span></p>
                                 </div>
                             </div>
-                            <div class="event-box">
-                                <span class="event-sj">수지</span>
+                            <div class="swiper-slide">
+                                <span class="sj">수지</span>
                                 <span class="event-ing before">신청전</span>
                                 <p class="event-title">[메이커] 3D펜 리틀메이커스(1부) - 5월 16일(토)
                                     <a href="#"></a>
@@ -416,8 +418,8 @@
                                     <p class="survey-participant"><span>신청 : 0/10</span><span class="stand-by">대기 : 0/0</span></p>
                                 </div>  
                             </div>
-                            <div class="event-box">
-                                <span class="event-sj">수지</span>
+                            <div class="swiper-slide">
+                                <span class="sj">수지</span>
                                 <span class="event-ing before">신청전</span> 
                                 <p class="event-title">[메이커] 3D펜 리틀메이커스(2부) - 5월 16일(토)
                                     <a href="#"></a>
@@ -428,8 +430,8 @@
                                     <p class="survey-participant"><span>신청 : 0/10</span><span class="stand-by">대기 : 0/0</span></p>
                                 </div>
                             </div>
-                            <div class="event-box">
-                                <span class="event-sj">수지</span>
+                            <div class="swiper-slide">
+                                <span class="sj">수지</span>
                                 <span class="event-ing before">신청전</span>
                                 <p class="event-title">[수지 온에어(On-Air)] 5월 14일(목) 키즈 승무원 - 4회차(16:00~16:30)
                                     <a href="#"></a>
@@ -440,8 +442,8 @@
                                     <p class="survey-participant"><span>신청 : 0/1</span><span class="stand-by">대기 : 0/1</span></p>
                                 </div>
                             </div>
-                            <div class="event-box">
-                                <span class="event-sj">수지</span>
+                            <div class="swiper-slide">
+                                <span class="sj">수지</span>
                                 <span class="event-ing before">신청전</span>
                                 <p class="event-title">[수지 온에어(On-Air)] 5월 14일(목) 키즈 승무원 - 1회차(14:00~14:30)
                                     <a href="#"></a>
@@ -452,8 +454,8 @@
                                     <p class="survey-participant"><span>신청 : 0/1</span><span class="stand-by">대기 : 0/1</span></p>
                                 </div>
                             </div>
-                            <div class="event-box">
-                                <span class="event-sj">수지</span>
+                            <div class="swiper-slide">
+                                <span class="sj">수지</span>
                                 <span class="event-ing before">신청전</span>
                                 <p class="event-title">[수지 온에어(On-Air)] 5월 14일(목) 키즈 승무원 - 3회차(15:20~15:50)
                                     <a href="#"></a>
@@ -464,8 +466,8 @@
                                     <p class="survey-participant"><span>신청 : 0/1</span><span class="stand-by">대기 : 0/1</span></p>
                                 </div>
                             </div>
-                            <div class="event-box">
-                                <span class="event-sj">수지</span>
+                            <div class="swiper-slide">
+                                <span class="sj">수지</span>
                                 <span class="event-ing before">신청전</span>
                                 <p class="event-title">[수지 온에어(On-Air)] 5월 14일(목) 키즈 승무원 - 2회차(14:40~15:10)
                                     <a href="#"></a>
@@ -476,8 +478,8 @@
                                     <p class="survey-participant"><span>신청 : 0/1</span><span class="stand-by">대기 : 0/1</span></p>
                                 </div>
                             </div>
-                            <div class="event-box">
-                                <span class="event-sj">수지</span>
+                            <div class="swiper-slide">
+                                <span class="sj">수지</span>
                                 <span class="closed">마감</span>
                                 <p class="event-title">[메이커] 우리가족 놀이공원 「레고로 만드는 움직이는 놀이기구」(1부)
                                     <a href="#"></a>
@@ -489,13 +491,15 @@
                                 </div>
                             </div>
                         </div><!--/event-->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div><!-- slide-banner-wrap -->
                 </div><!--/문화 행사-->
                 <!-- 북큐레이션 -->
                 <div class="sec-area curation">  
                     <div class="tit-box">
                         <h2 class="sec-tit">북큐레이션</h2>
-                        <a href="#" class="more"><img src="../images/icon/plus.png" alt="전체보기"></a>
+                        <a href="#" class="more"><img src="images/icon/plus.png" alt="전체보기"></a>
                     </div>
                     <div class="curation-box">
                         <div class="tab-btn">
@@ -609,8 +613,8 @@
                                 </li>
                             </ul>
                             <p class="slide-btns">
-                                <button class="prev"><img src="../images/icon/prev.png" alt="이전배너보기"></button>
-                                <button class="next"><img src="../images/icon/next.png" alt="다음배너보기"></button>
+                                <button class="prev"><img src="images/icon/prev.png" alt="이전배너보기"></button>
+                                <button class="next"><img src="images/icon/next.png" alt="다음배너보기"></button>
                             </p>
                         </div>
                     </div>

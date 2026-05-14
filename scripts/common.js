@@ -38,8 +38,6 @@ sideTab.addEventListener("mouseout", (e) => {
     activateDl(defaultDl);
 });
 
-
-
 function activateDl(targetDl) {
     sideTab.querySelectorAll("dl").forEach(dl => dl.classList.remove("active"));
     targetDl.classList.add("active");

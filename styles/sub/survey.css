@@ -30,8 +30,7 @@
 
 .contents .base-form li {
     display: none;
-    padding: 10px 20px 10px 15px;
-    border-top: 1px solid #e2e2e2;
+    padding: 11px 20px 10px 15px;
 }
 
 .contents .base-form input {
@@ -128,10 +127,22 @@
     line-height: 22px; /* 줄간격 */
 }
 
-.paging-box { text-align: center;}
-.paging-box a {padding: 0 5px;}
+.paging-box {text-align: center; margin: 40px 0;}
 
+.paging-box a {
+    display: inline-block;
+    width: 35px;
+    height: 40px;
+    font-size: 20px; 
+    font-weight: 300;
+    color: #232323;
+    padding: 5px;
+}
 
+.paging-box a.active{
+    color: #fff;
+    background-color: #232323;
+}
 
 
 @media screen and (min-width: 500px){

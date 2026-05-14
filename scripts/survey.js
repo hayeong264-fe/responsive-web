@@ -17,3 +17,20 @@ libraryName.addEventListener("click", function(){
         }
     });
 });
+
+const pagingBtn = document.querySelectorAll(".paging-box a");
+
+pagingBtn.forEach(function(btn){
+
+    btn.addEventListener("click", function(e){
+
+        e.preventDefault();
+
+        pagingBtn.forEach(function(item){
+            item.classList.remove("active");
+        });
+
+        btn.classList.add("active");
+    });
+});
+

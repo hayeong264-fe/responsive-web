@@ -131,9 +131,8 @@
 
 .paging-box a {
     display: inline-block;
-    width: 35px;
-    height: 40px;
-    font-size: 20px; 
+    height: 32px;
+    font-size: 14px; 
     font-weight: 300;
     color: #232323;
     padding: 5px;
@@ -188,6 +187,10 @@
         font-size: 22px;
         line-height: 24px; /* 줄간격 */
     }
+    .paging-box a {
+        font-size: 20px; 
+        width: 35px;
+}
     
 }
 

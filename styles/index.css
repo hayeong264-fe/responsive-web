@@ -399,7 +399,7 @@
 /*문화 행사 (하영구역)*/
 
 .swiper-wrapper .swiper-slide { /*li*/
-    width: 235px;
+    width: 280px;
     height: auto;
     border: 1px solid #e2e2e2;
     padding: 20px;
@@ -421,7 +421,6 @@
     margin-right: 5px;
 }
 .swiper-slide {
-    width: 280px !important;
     padding: 20px;
 }
 .swiper-slide .sj {background-color: #1b6eab;}
@@ -430,7 +429,13 @@
 .swiper-slide .closed { background-color: #8e9297;}
 .swiper-slide .pending  {font-size: 13px; background-color: #81b148;}
 
+.culture-banner .swiper {
+    overflow: hidden;
+}
 
+.culture-banner .swiper-slide {
+    box-sizing: border-box;
+}
 .event-title {
     margin: 20px 0;
     font-size: 16px; 
@@ -453,7 +458,15 @@
 .swiper-slide .target {margin-top: 8px;}
 
 .item-info .stand-by{margin-left: 10px;}
-
+@media screen and (min-width: 1024px){ 
+    .swiper-slide{
+        transition: 0.3s;        
+    }
+    .swiper-slide:hover{
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+}
 
 /* curation - 북큐레이션 */
 

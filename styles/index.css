@@ -1,3 +1,23 @@
+.container inner {
+    position: relative;
+    width: 100%;
+}
+
+.popup-container {
+    position: absolute; left:27%; top:8%;
+    height: 430px;
+    z-index: 999;  
+    width: 600px;   
+    background: #fff; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
+}
+.popup-container .close {
+    text-align: right;
+    padding: 10px;
+    background-color: rgba(68, 68, 68, .8);
+}
+.popup-container .close span {color: #fff;}
+
 /*본문 전체 적용*/
 #main {
     width: 100%;

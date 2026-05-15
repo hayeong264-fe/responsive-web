@@ -12,7 +12,10 @@
 .popup-area {
     position: relative;
     margin: 0 auto;
-    width: 280px;
+
+    width: 90%;
+    max-width: 600px;
+     min-width: 280px; 
     height: 400px;
     background-color: white;
     display: flex;

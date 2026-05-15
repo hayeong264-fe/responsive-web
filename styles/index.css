@@ -1,22 +1,60 @@
-.container inner {
+.popup-wrap {
+    position: fixed;
+    left: 0; right: 0;
+    top:0; bottom:0;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.test {position: absolute; right: 65px; top:-5px; font-size:13px;}
+.popup-area {
     position: relative;
-    width: 100%;
+    margin: 0 auto;
+    width: 280px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column; /* row */
+}
+.popup-area .close-btn {
+    color: #fff;
+    font-weight: 300;
+    position: absolute; right: 0; top: 0;
+    line-height: 30px;
 }
 
-.popup-container {
-    position: absolute; left:27%; top:8%;
-    height: 430px;
-    z-index: 999;  
-    width: 600px;   
-    background: #fff; 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
+.popup-area .cont { flex: 1 }
+.popup-area .controls {
+    font-weight: 300;
+    color: #fff;
+    align-items: center;
+    text-align: right; 
+    height: 32px;
+    background-color: rgba(68, 68, 68, .8); 
 }
-.popup-container .close {
-    text-align: right;
-    padding: 10px;
-    background-color: rgba(68, 68, 68, .8);
+.controls button img {
+    width: 30px; 
+    height: 30px; 
 }
-.popup-container .close span {color: #fff;}
+
+
+/* 체크박스 배경이미지로 생성 */
+.popup-area label::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    /* background: url(imgs/check-off.svg) no-repeat; */
+    background-size: 25px 25px; 
+}
+
+.popup-area label.check::before {
+    /* background-image: url(imgs/check-on.svg); */
+}
+
+
 
 /*본문 전체 적용*/
 #main {

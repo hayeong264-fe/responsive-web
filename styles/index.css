@@ -8,11 +8,11 @@
     justify-content: center;
     align-items: center;
     }
-.test {position: absolute; right: 65px; top:-5px; font-size:13px;}
+.check {position: absolute; right: 65px; top:-5px; font-size:13px;}
+.check input {display: none;}
 .popup-area {
     position: relative;
     margin: 0 auto;
-
     width: 90%;
     max-width: 600px;
      min-width: 280px; 
@@ -687,6 +687,13 @@
         color: #646464;
         margin-top: 10px;
     }
+
+    /* 팝업창 */
+    .popup-area .controls { height: 36px;}
+    .check {position: absolute; right: 65px; top:-3px; font-size:13px;}
+    .popup-area .close-btn {
+        position: absolute; right: 0; top: 2px;
+    }
 }
 
 
@@ -696,13 +703,13 @@
     .banner-wrap {
         display: flex;
         overflow: hidden;
-        gap:20px
     }
     .banner-wrap .sec-area:first-child {
-        width: calc(40% - 20px);
+        width: 38%;
     }
     .banner-wrap .sec-area:last-child {
-        width: calc(60% - 20px);
+        width: 60%;
+        margin-left: 2%;
     }
     #main .tab-btn button,
     #main .tab-btn button a {
@@ -762,6 +769,15 @@
     /*도서관 아카이브*/
     .sel-box a {
         margin-top: 5px;
+    }
+    
+    /* 팝업창 */
+    .popup-area .controls { height: 40px;}
+    .check {position: absolute; right: 65px; top:-1px; font-size:13px;}
+    .popup-area .close-btn {
+        color: #fff;
+        font-weight: 300;
+        position: absolute; right: 0; top: 4px;
     }
 
 

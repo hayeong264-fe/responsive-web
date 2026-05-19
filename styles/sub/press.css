@@ -13,7 +13,7 @@
  .base-form #library-ch {
     width: calc(100% - 20px);
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: #fff;
     overflow: hidden;
     position: absolute; left: 10px; top: 10px;
@@ -37,7 +37,7 @@
 
 .contents .base-form ul {
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: #fff;
 }
 
@@ -50,13 +50,13 @@
     border-top: 0 none;
 }
 
- .contents .base-form li {
+.contents .base-form li {
     display: none;
     height: 46px;
     padding: 10px 20px 10px 15px;
     border-top: 1px solid #e2e2e2;
 }
- .contents .base-form li:first-child {
+.contents .base-form li:first-child {
     border-top: 0 none;
 }
 
@@ -70,7 +70,7 @@
 .base-form .search ul {
     width: 25%;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: #fff;
     position: absolute; left: 0; top: 0;
 }
@@ -79,7 +79,7 @@
 .search .library-name li {display: none;}
 
 .contents .base-form .search {
-    width: calc(100% - 20px);
+    width: calc(100% - 14px);
     display: flex;
     gap: 4px;
     margin-top: 5px;
@@ -96,7 +96,7 @@
     background-color: #444;
     color: #fff;
     font-weight: 500;
-    border-radius: 3px;
+    border-radius: 4px;
     padding: 10px 0;
     box-sizing: border-box
 
@@ -149,8 +149,10 @@
     .post-cont .press-date{width: 100px; text-align: center; } 
     .post-cont .press-views {width: 100px;text-align: center; }
     .post-cont .press-name a {font-size: 18px;}
-    .post-cont .press-name {width: 45%;}
+    .post-cont .press-name {width: 40%;}
     .post-cont .table-line td {padding: 38px 2px;}
+    .base-form .search div {
+    width: calc(75% - 4px);}
 }
 
 
@@ -199,7 +201,6 @@
 
     .post-cont .press-number {width: 80px;} 
     .post-cont .press-img {width: 120px;} 
-    .post-cont .press-name {width: 45%;}
     .post-cont .table-line td {padding: 38px 2px;}
 }
 

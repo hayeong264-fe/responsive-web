@@ -14,8 +14,14 @@
     line-height: 24px; /* 줄간격 */
 }
 
-.search .library-name {width: 26%; position: absolute; top:0; left:0;}
-.input-box {width: 73%; position: absolute; left: 27%; top:2px; display: flex;}
+.contents .base-form {
+    position: relative;
+    border: 0 none;
+    margin-bottom: 20px;
+    height: 80px;
+    padding: 10px;
+    background-color: #e2e2e2;
+}
 
 .contents .base-form ul {
     border: 1px solid #ccc;
@@ -23,30 +29,70 @@
     background-color: #fff;
 }
 
-.contents .base-form li.show {
-    display: block;
+.contents .base-form li:first-child {
+    border-top: 0 none;
 }
 
+.contents .base-form ul li.active {
+    display: block;
+    border-top: 0 none;
+}
 
 .contents .base-form li {
     display: none;
-    padding: 11px 20px 10px 15px;
+    height: 46px;
+    padding: 10px 20px 10px 15px;
+    border-top: 1px solid #e2e2e2;
+}
+.contents .base-form li:first-child {
+    border-top: 0 none;
+}
+
+
+.base-form .search div {
+    width: calc(78% - 4px);
+    position: absolute; left: calc(25% + 4px); top: 1px;
+    display: flex;
+    gap: 4px;
+}
+.base-form .search ul {
+    width: 25%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    position: absolute; left: 0; top: 0;
+}
+
+.search .library-name li.show {display: block;}
+.search .library-name li {display: none;}
+
+.contents .base-form .search {
+    width: calc(100% - 20px);
+    display: flex;
+    gap: 4px;
+    margin-top: 5px;
+    position: relative; right: 0; top: 0;
 }
 
 .contents .base-form input {
+    padding: 11px 15px;
     background-color: #fff;
+}
+.contents .base-form .input-box {
+    
 }
 
 .contents .base-form button {
-    width: 30%;
+    width: 50%;
     border: 1px solid #444;
     background-color: #444;
     color: #fff;
     font-weight: 500;
     border-radius: 3px;
-    margin-left: 5px;
-}
+    padding: 10px 0;
+    box-sizing: border-box
 
+}
 
 .survey-box {
     border: 1px solid #e2e2e2;

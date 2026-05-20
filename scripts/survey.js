@@ -1,22 +1,30 @@
 const libraryName = document.querySelector(".library-name");
 const libraryContent = libraryName.querySelectorAll("li");
 
-libraryName.addEventListener("click", function(){
+libraryName.addEventListener("click", function (e) {
+    if (e.target.tagName === "LI") {
+        libraryContent.forEach(function (item) {
+            item.classList.remove("show");
+        });
+        e.target.classList.add("show");
+    }
 
     this.classList.toggle("open");
 
-    libraryContent.forEach(function(item){
-
-        if(!item.classList.contains("show")){
-
-            if(libraryName.classList.contains("open")){
-                item.style.display = "block";
-            }else{
+    const isOpen = this.classList.contains("open");
+    
+    libraryContent.forEach(function (item) {
+        if (isOpen) {
+            item.style.display = "block";
+        } else {
+            if (!item.classList.contains("show")) {
                 item.style.display = "none";
             }
         }
     });
 });
+
+
 
 const pagingBtn = document.querySelectorAll(".paging-box a");
 

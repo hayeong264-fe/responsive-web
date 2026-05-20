@@ -16,7 +16,7 @@
 .kdctit-wrap .icon-btn li {
     text-align: center; 
     border: 1px solid #e2e2e2;
-    padding: 8px 0;
+    padding: 8px 3px;
     border-radius: 3px;
 }
 
@@ -82,7 +82,7 @@
 }
 
 .kdctit-wrap .icon-btn li:nth-child(9) button::after {
-    background: url(../../images/icon-img8.png) no-repeat center;
+    background: url(../../images/icon-img9.png) no-repeat center;
     background-size: cover;
 }
 
@@ -182,68 +182,55 @@
         box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     }
     
-.kdctit-wrap .icon-btn li button::after {
+
+    .kdctit-wrap .icon-btn li:nth-child(1) button,
+    .kdctit-wrap .icon-btn li:nth-child(2) button,
+    .kdctit-wrap .icon-btn li:nth-child(3) button,
+    .kdctit-wrap .icon-btn li:nth-child(7) button,
+    .kdctit-wrap .icon-btn li:nth-child(8) button,
+    .kdctit-wrap .icon-btn li:nth-child(9) button,
+    .kdctit-wrap .icon-btn li:nth-child(10) button
+    {
+        padding-left: 79px;
+        padding-top: 20px;
+        font-size: 17px;
+        margin-left: -19px;
+    }
+
+    .kdctit-wrap .icon-btn li:nth-child(4) button,
+    .kdctit-wrap .icon-btn li:nth-child(5) button,
+    .kdctit-wrap .icon-btn li:nth-child(6) button
+    {
+        padding-top: 21px;
+        padding-left: 32px;
+        margin-left: 30px;
+        font-size: 17px;
+
+    }
+    
+
+    .kdctit-wrap .icon-btn li button::after {
         content: "";
-        position: absolute; left: -54px; top: 50%;
-        transform: translateY(-50%);
+        position: absolute; left: 0; top: 2px;
         width: 60px;
         height: 60px;
         display: block;
     }
-
-    .kdctit-wrap .icon-btn li:nth-child(1) button::after {
-        background: url(../../images/icon-img1.png) no-repeat center;
-        background-size: cover;
+    .kdctit-wrap .icon-btn li button {
+        padding-top: 55px;
+    }
+    .kdctit-wrap .icon-btn li {
+        padding-bottom: 25px;
     }
 
-    .kdctit-wrap .icon-btn li:nth-child(2) button::after {
-        background: url(../../images/icon-img2.png) no-repeat center;
-        background-size: cover;
-    }
-
-    .kdctit-wrap .icon-btn li:nth-child(3) button::after {
-        background: url(../../images/icon-img3.png) no-repeat center;
-        background-size: cover;
-    }
-
-    .kdctit-wrap .icon-btn li:nth-child(4) button::after {
-        background: url(../../images/icon-img4.png) no-repeat center;
-        background-size: cover;
-        left: -42px; top: 5px;
-    }
-
-    .kdctit-wrap .icon-btn li:nth-child(5) button::after {
-        background: url(../../images/icon-img5.png) no-repeat center;
-        background-size: cover;
-        left: -42px; top: 5px;
-    }
-
-    .kdctit-wrap .icon-btn li:nth-child(6) button::after {
-        background: url(../../images/icon-img6.png) no-repeat center;
-        background-size: cover;
-        left: -42px; top: 5px;
-    }
-
-    .kdctit-wrap .icon-btn li:nth-child(7) button::after {
-        background: url(../../images/icon-img7.png) no-repeat center;
-        background-size: cover;
-    }
-
-    .kdctit-wrap .icon-btn li:nth-child(8) button::after {
-        background: url(../../images/icon-img8.png) no-repeat center;
-        background-size: cover;
-    }
-
-    .kdctit-wrap .icon-btn li:nth-child(9) button::after {
-        background: url(../../images/icon-img8.png) no-repeat center;
-        background-size: cover;
-    }
-
-    .kdctit-wrap .icon-btn li:nth-child(10) button::after {
-        background: url(../../images/icon-img10.png) no-repeat center;
-        background-size: cover;
-    }
-
+    .kdctit-wrap .icon-btn li:nth-child(4) button::after, 
+    .kdctit-wrap .icon-btn li:nth-child(5) button::after,
+    .kdctit-wrap .icon-btn li:nth-child(6) button::after
+    {   left: -37px; top: 0;}
 
 }
+
+
+
+
 
